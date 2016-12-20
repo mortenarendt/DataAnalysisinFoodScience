@@ -1,0 +1,11 @@
+Package: DAinFoodScience
+Type: Package
+Title: Data Analysis in Food Science
+Version: 0.1.0
+Authors@R: person("Morten", "Rasmussen", email = "mortenr@food.ku.dk", role = c("aut", "cre"))
+Description: This package contain data resources used in the course Data
+    Analysis in Food Science @University of Copenhagen. These data are real data.
+    Please reference the original publication if you use them.
+License: What license is it under?
+LazyData: TRUE
+RoxygenNote: 5.0.1

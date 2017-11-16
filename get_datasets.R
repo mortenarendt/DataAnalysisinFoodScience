@@ -6,7 +6,9 @@ rm(list = ls())
 
 mouse <- gdata::read.xls('~/Dropbox/Backup/MyDocumentsOnC/Course and teaching/Foedevaredataanalyse/Data/Dennis_Mouse_Whey/Mouse_diet_intervention.xlsx')
 
-coffeetemp <- gdata::read.xls('~/Dropbox/Backup/MyDocumentsOnC/Course and teaching/Foedevaredataanalyse/Data/Coffee Morten and Ida/Temperature/Results Panel.xlsx')
+coffeetemppanel <- gdata::read.xls('~/Dropbox/Backup/MyDocumentsOnC/Course and teaching/Foedevaredataanalyse/Data/Coffee Morten and Ida/Temperature/Results Panel.xlsx')
+
+coffeetempconsumer <- gdata::read.xls('~/Dropbox/Backup/MyDocumentsOnC/Course and teaching/Foedevaredataanalyse/Data/Coffee Morten and Ida/Temperature/Results Consumer Test.xlsx')
 
 beer <- gdata::read.xls('~/Dropbox/Backup/MyDocumentsOnC/Course and teaching/Foedevaredataanalyse/Data/Tobias Beer/Beer GCMS.xlsx')
 
@@ -23,4 +25,4 @@ oliveoil <- cbind(Oliveoil,y)
 
 maramaox <- gdata::read.xls('~/Dropbox/Backup/MyDocumentsOnC/Course and teaching/Foedevaredataanalyse/Data/Marama_MetteHolse/Marama Oil storage exp/MaramaBeanOilOx.xlsx')
 
-devtools::use_data(mouse,coffeetemp,beer,wine,fiber,zrouxii,oliveoil,maramaox)
+devtools::use_data(mouse,coffeetemppanel, coffeetempconsumer,beer,wine,fiber,zrouxii,oliveoil,maramaox,overwrite = TRUE)

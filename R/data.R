@@ -10,5 +10,5 @@
 #' @docType data
 #' @keywords datasets
 #' @name teachers_weight1n1
-#' @usage data(teachers_weight1on1)
+#' @usage data(teachers_weight1n1)
 NULL

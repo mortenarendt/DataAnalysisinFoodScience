@@ -25,4 +25,14 @@ oliveoil <- cbind(Oliveoil,y)
 
 maramaox <- gdata::read.xls('~/Dropbox/Backup/MyDocumentsOnC/Course and teaching/Foedevaredataanalyse/Data/Marama_MetteHolse/Marama Oil storage exp/MaramaBeanOilOx.xlsx')
 
-devtools::use_data(mouse,coffeetemppanel, coffeetempconsumer,beer,wine,fiber,zrouxii,oliveoil,maramaox,overwrite = TRUE)
+teachers_weight1n1 <- read.csv('~/Dropbox/Backup/MyDocumentsOnC/Course and teaching/Foedevaredataanalyse/Data/Mortens_vaegt/Weight_1og1.csv')
+teachers_weight1n1$studentID <- 1:59
+colnames(teachers_weight1n1)[9] <- 'weight'
+teachers_weight1n1 <- teachers_weight1n1[,c('studentID','weight')]
+
+teachers_weight2n2 <- read.csv('~/Dropbox/Backup/MyDocumentsOnC/Course and teaching/Foedevaredataanalyse/Data/Mortens_vaegt/Weight_2og2.csv')
+teachers_weight2n2$studentID <- 1:45
+colnames(teachers_weight2n2)[9] <- 'weight'
+teachers_weight2n2 <- teachers_weight2on2[,c('studentID','weight')]
+
+devtools::use_data(mouse,coffeetemppanel, coffeetempconsumer,beer,wine,fiber,zrouxii,oliveoil,maramaox,teachers_weight1n1,teachers_weight2n2,overwrite = TRUE)

@@ -7,4 +7,8 @@
 #'   \item{studentID}{id number for the student}
 #'   \item{weight}{weight guess in kg}
 #' }
-"teachers_weight1n1"
+#' @docType data
+#' @keywords datasets
+#' @name teachers_weight1on1
+#' @usage data(teachers_weight1on1)
+NULL
